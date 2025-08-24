@@ -1,6 +1,6 @@
 {
 	"React component": {
-		"prefix": "rc-component",
+		"prefix": "rc_component",
 		"body": [
 			"import React from 'react'",
 			"",
@@ -14,14 +14,14 @@
 		"description": "React component"
 	},
 	"React useState": {
-		"prefix": "rc-state",
+		"prefix": "rc_state",
 		"body": [
 			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialState});"
 		],
 		"description": "Create React useState hook with a capitalized setter function."
 	},
 	"React useEffect with dependencies": {
-		"prefix": "rc-effect",
+		"prefix": "rc_effect",
 		"body": [
 			"useEffect(() => {",
 			"\t$1",
@@ -30,14 +30,14 @@
 		"description": "Create React useEffect hook with dependencies."
 	},
 	"React useMemo with dependencies": {
-		"prefix": "umo",
+		"prefix": "rc_memo",
 		"body": [
 			"const ${1:memoizedValue} = useMemo(() => $2, [$3]);"
 		],
 		"description": "Create React useMemo hook with dependencies."
 	},
 	"React state": {
-		"prefix": "rc-api",
+		"prefix": "rc_api",
 		"body": [
 			"const [${1:action}Status, set${1/(.*)/${1:/capitalize}/}Status] = useState({data: $2, error: null, loading: false});",
 			"",
@@ -54,7 +54,7 @@
 		"description": "React state"
 	},
 	"React Tailwind Loader": {
-		"prefix": "tw-loader",
+		"prefix": "tw_loader",
 		"body": [
 			"<div className=\"flex justify-center items-center\">",
 			"  <div className=\"w-12 h-12 rounded-full border-4 border-t-4 border-gray-200 border-t-blue-500 animate-spin\"></div>",
@@ -63,7 +63,7 @@
 		"description": "A simple spinning loader component"
 	},
 	"React Tailwind Error Banner": {
-		"prefix": "tw-error",
+		"prefix": "tw_error",
 		"body": [
 			"<div className=\"p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400\" role=\"alert\">",
 			"  <span className=\"font-medium\">Error!</span> ${1:Something went wrong. Please try again.}",
@@ -72,7 +72,7 @@
 		"description": "A dismissible error banner component"
 	},
 	"React Tailwind Info Banner": {
-		"prefix": "tw-info",
+		"prefix": "tw_info",
 		"body": [
 			"<div className=\"p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400\" role=\"alert\">",
 			"  <span className=\"font-medium\">Info!</span> ${1:Please read this important message.}",
@@ -81,7 +81,7 @@
 		"description": "A dismissible info banner component"
 	},
 	"Tailwind Table": {
-		"prefix": "tw-table",
+		"prefix": "tw_table",
 		"body": [
 			"<div className=\"overflow-x-auto\">",
 			"  <table className=\"min-w-full border border-gray-300\">",
@@ -103,7 +103,7 @@
 		"description": "Simple Tailwind CSS table in JSX"
 	},
 	"React Tailwind Button": {
-		"prefix": "tw-button",
+		"prefix": "tw_button",
 		"body": [
 			"<button className=\"text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\">",
 			"  ${1:Button Text}",
@@ -112,7 +112,7 @@
 		"description": "A basic styled button component"
 	},
 	"React Tailwind Flex Center": {
-		"prefix": "tw-flex-center",
+		"prefix": "tw_flex-center",
 		"body": [
 			"<div className=\"flex items-center justify-center h-screen\">",
 			"  ${1:<!-- Your centered content here -->}",
@@ -121,7 +121,7 @@
 		"description": "A Flexbox container that centers its children"
 	},
 	"React Tailwind Container": {
-		"prefix": "tw-container",
+		"prefix": "tw_container",
 		"body": [
 			"<div className=\"container mx-auto px-4\">",
 			"  ${1:<!-- Your content here -->}",
@@ -130,7 +130,7 @@
 		"description": "A responsive, centered container"
 	},
 	"API CRUD Functions": {
-		"prefix": "rc-resource",
+		"prefix": "rc_resource",
 		"body": [
 			"const BASE_URL = \"http://localhost:3000\";",
 			"",
@@ -174,7 +174,7 @@
 		"description": "Generate CRUD API functions for any resource with one input"
 	},
 	"Form": {
-		"prefix": "rc-form",
+		"prefix": "rc_form",
 		"body": [
 			"",
 			"export default function Form({ defaultValues, onSubmit }) {",
@@ -212,7 +212,7 @@
 		"description": "Form"
 	},
 	"Alert": {
-		"prefix": "rc-alert",
+		"prefix": "rc_alert",
 		"body": [
 			"const typeStyles = {",
 			"  success: \"bg-green-100 text-green-800 border-green-300\",",
@@ -251,7 +251,7 @@
 		"description": "Alert"
 	},
 	"Select": {
-		"prefix": "rc-select",
+		"prefix": "rc_select",
 		"body": [
 			"",
 			"export default function Select(props) {",
@@ -271,7 +271,7 @@
 		"description": "Select"
 	},
 	"Input": {
-		"prefix": "rc-input",
+		"prefix": "rc_input",
 		"body": [
 			"",
 			"export default function Input({",
@@ -310,7 +310,7 @@
 		"description": "Input"
 	},
 	"Footer": {
-		"prefix": "rc-footer",
+		"prefix": "rc_footer",
 		"body": [
 			"export default function Footer() {",
 			"  return (",
@@ -339,7 +339,7 @@
 		"description": "Footer"
 	},
 	"Navbar": {
-		"prefix": "rc-navbar",
+		"prefix": "rc_navbar",
 		"body": [
 			"export default function Navbar() {",
 			"  const [isOpen, setIsOpen] = useState(false);",
@@ -404,7 +404,7 @@
 		"description": "Navbar"
 	},
 	"Container": {
-		"prefix": "rc-container",
+		"prefix": "rc_container",
 		"body": [
 			"export default function Container({ className, children }) {",
 			"  return (",
@@ -415,14 +415,14 @@
 		"description": "Container"
 	},
 	"Col": {
-		"prefix": "rc-col",
+		"prefix": "rc_col",
 		"body": [
 			"export default function Col({ className, center, children }) {",
 			"  return (",
 			"    <div",
 			"      className={`flex w-full flex-col gap-2 ${",
-			"        center ? \"justify-center\" : \"\"",
-			"      } ${className}`}",
+			"        center ? \"items-center\" : \"\"",
+			"      } \\${className}`}",
 			"    >",
 			"      {children}",
 			"    </div>",
@@ -433,11 +433,11 @@
 		"description": "Col"
 	},
 	"Row": {
-		"prefix": "rc-row",
+		"prefix": "rc_row",
 		"body": [
 			"export default function Row({ className, children, center }) {",
 			"  return (",
-			"    <div className={`flex gap-2 ${center ? \"items-center\" : \"\"} ${className}`}>",
+			"    <div className={`flex gap-2 ${center ? \"items-center\" : \"\"} \\${className}`}>",
 			"      {children}",
 			"    </div>",
 			"  );",
@@ -447,7 +447,7 @@
 		"description": "Row"
 	},
 	"Modal": {
-		"prefix": "rc-modal",
+		"prefix": "rc_modal",
 		"body": [
 			"export default function Modal({ onClose, title, children, footer }) {",
 			"  return (",
@@ -486,72 +486,52 @@
 		],
 		"description": "Modal"
 	},
-	"Button": {
-		"prefix": "rc-button",
+	"React Reusable Button": {
+		"prefix": "rc_button",
 		"body": [
-			"export default function Button({ onClick, children, type, size = 3, ...props }) {",
-			"  if (type === \"danger\") {",
-			"    return (",
-			"      <button",
-			"        onClick={onClick}",
-			"        style={{",
-			"          paddingLeft: size * 3,",
-			"          paddingRight: size * 3,",
-			"          paddingTop: size * 1.5,",
-			"          paddingBottom: size * 1.5,",
-			"          fontSize: size * 5,",
-			"        }}",
-			"        className={",
-			"          `cursor-pointer text-white bg-red-700 hover:bg-red-800 focus:ring-1 focus:ring-red-300 rounded-sm focus:outline-none ` +",
-			"            props.className || \"\"",
-			"        }",
-			"        {...props}",
-			"      >",
-			"        {children}",
-			"      </button>",
-			"    );",
-			"  }",
+			"const typeClasses = {",
+			"  danger:",
+			"    \"text-white bg-red-700 hover:bg-red-800 focus:ring-1 focus:ring-red-300\",",
+			"  success:",
+			"    \"text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:ring-blue-300\",",
+			"  default:",
+			"    \"text-black bg-gray-300 hover:bg-gray-400 focus:ring-1 focus:ring-gray-400\",",
+			"};",
 			"",
-			"  if (type === \"success\") {",
-			"    return (",
-			"      <button",
-			"        onClick={onClick}",
-			"        style={{",
-			"          paddingLeft: size * 3,",
-			"          paddingRight: size * 3,",
-			"          paddingTop: size * 1.5,",
-			"          paddingBottom: size * 1.5,",
-			"          fontSize: size * 5,",
-			"        }}",
-			"        className=\"cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 rounded-sm focus:outline-none\"",
-			"      >",
-			"        {children}",
-			"      </button>",
-			"    );",
-			"  }",
+			"export default function Button({",
+			"  onClick,",
+			"  children,",
+			"  type = \"default\",",
+			"  size = 3,",
+			"  className = \"\",",
+			"  ...props",
+			"}) {",
+			"  const paddingX = size * 4;",
+			"  const paddingY = size * 1.5;",
+			"  const fontSize = size * 5;",
 			"",
 			"  return (",
 			"    <button",
 			"      onClick={onClick}",
 			"      style={{",
-			"        paddingLeft: size * 3,",
-			"        paddingRight: size * 3,",
-			"        paddingTop: size * 1.5,",
-			"        paddingBottom: size * 1.5,",
-			"        fontSize: size * 5,",
+			"        paddingLeft: paddingX,",
+			"        paddingRight: paddingX,",
+			"        paddingTop: paddingY,",
+			"        paddingBottom: paddingY,",
+			"        fontSize,",
 			"      }}",
-			"      className=\"cursor-pointer text-black bg-gray-300 hover:bg-gray-400 focus:ring-1 focus:ring-gray-400 rounded-sm focus:outline-none\"",
+			"      className={`cursor-pointer rounded-sm focus:outline-none ${typeClasses[type] || typeClasses.default} \\${className}`}",
+			"      {...props}",
 			"    >",
 			"      {children}",
 			"    </button>",
 			"  );",
-			"}",
-			""
+			"}"
 		],
-		"description": "Button"
+		"description": "Reusable Button component with type variants (danger, success, default)"
 	},
 	"Loader": {
-		"prefix": "rc-loader",
+		"prefix": "rc_loader",
 		"body": [
 			"export default function Loader({ type, size = 1, shimmerWidths = [\"100%\", \"100%\", \"100%\"] }) {",
 			"  if (type === \"indeterminate\") {",
@@ -594,37 +574,17 @@
 		"description": "Loader"
 	},
 	"React Modal with State": {
-		"prefix": "rc-modal-use",
+		"prefix": "rc_modal_use",
 		"body": [
 			"const [${1:modalOpen}, set${1/(.*)/${1:/capitalize}/}] = useState(false);",
 			"",
 			"{${1:modalOpen} && (",
 			"  <Modal",
 			"    title=\"${2:Title}\"",
-			"    footer={null}",
 			"    onClose={() => set${1/(.*)/${1:/capitalize}/}(false)}",
 			"  ></Modal>",
 			")}"
 		],
 		"description": "React modal snippet with dynamic state name"
 	},
-	"React Modal Hook with Toggle": {
-		"prefix": "rc-use-modal",
-		"body": [
-			"const [${1:modalOpen}, set${1/(.*)/${1:/capitalize}/}Open] = useState(false);",
-			"",
-			"{",
-			"  ${1:modalOpen} && (",
-			"    <Modal",
-			"      title=\"${2:Title}\"",
-			"      footer={<Button onClick={() => set${1/(.*)/${1:/capitalize}/}Open(false)}>${3:Close}</Button>}",
-			"      onClose={() => set${1/(.*)/${1:/capitalize}/}Open(false)}",
-			"    >",
-			"      ${4:hello}",
-			"    </Modal>",
-			"  )",
-			"}"
-		],
-		"description": "Insert a reusable React modal component with state hook"
-	}
 }
